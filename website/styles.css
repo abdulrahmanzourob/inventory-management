@@ -1,0 +1,193 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Form Box */
+.form-box {
+  background: #161b22;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.form-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #58a6ff;
+}
+
+/* Inputs */
+.input-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #21262d;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+  outline: none;
+  background: #30363d;
+  box-shadow: 0 0 5px rgba(88, 166, 255, 0.5);
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #238636;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2ea043;
+  box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .form-box {
+    padding: 20px;
+  }
+}
+/* ✅ تنسيق صندوق عرض الأخطاء */
+.error_container {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: rgba(255, 77, 77, 0.12); /* لون خلفية هادئ */
+  border-left: 4px solid #ff4d4d; /* خط جانبي مميز */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(255, 77, 77, 0.2); /* ظل ناعم */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ✅ تنسيق كل رسالة خطأ */
+.form_error {
+  color: #ff4d4d;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 8px 0;
+  padding: 10px;
+  background: linear-gradient(135deg, rgba(255, 77, 77, 0.25), rgba(255, 77, 77, 0.15));
+  border: 1px solid rgba(255, 77, 77, 0.5);
+  border-radius: 8px;
+  display: block;
+  width: 95%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ تأثير عند تمرير الماوس */
+.form_error:hover {
+  background: rgba(255, 77, 77, 0.3);
+  transform: scale(1.02);
+}
+
+/* ✅ تأثير ظهور سلس */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #bbb;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+p a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+p a:hover {
+  color: #1f6feb;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+/* ✅ تحسين تنسيق رسالة النجاح */
+.success_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px; /* تقليل المسافة بين الرسالة والفورم */
+}
+
+.form_success {
+  background: rgba(77, 255, 77, 0.2);
+  color: #4caf50; /* لون أخضر احترافي */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* مسافة بين الأيقونة والنص */
+  animation: fadeIn 0.5s ease-in-out;
+  border: 1px solid #4caf50;
+}
+
+/* ✅ جعل الأيقونة متناسقة */
+.success_icon {
+  font-size: 18px;
+}

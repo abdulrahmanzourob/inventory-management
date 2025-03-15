@@ -1,0 +1,215 @@
+:root {
+  --background-dark: #3a3f47;
+  --primary-color: #2389fe; /* لون الأزرار الأساسي */
+  --secondary-color: #58a6ff; /* لون أزرار التعديل */
+  --danger-color: #e63946; /* لون أزرار الحذف */
+}
+
+body {
+  background-color: #0d1117;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 25px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  height: 80vh;
+}
+
+.controls {
+  flex: 1;
+  max-width: 30%;
+  background: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.controls input {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid var(--background-dark);
+  background: #21262d;
+  color: white;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.controls input:focus {
+  border: 1px solid #1f87ff; /* تغيير لون الحواف عند التركيز */
+  outline: none;
+}
+
+.search-bar-container input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--background-dark);
+  background: #21262d;
+  color: white;
+}
+
+.search-btn {
+  padding: 12px;
+  font-size: 16px;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background: #1f87ff;
+}
+
+.controls button {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  background: var(--primary-color);
+  color: white;
+}
+
+.controls button:hover {
+  background: #1f87ff;
+  transform: scale(1.05);
+}
+
+.table-container {
+  flex: 2;
+  overflow-x: auto;
+  background: #161b22;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #30363d;
+  text-align: center;
+}
+
+th {
+  background: #1c2229;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.edit-btn, .delete-btn {
+  padding: 10px 14px;
+  margin: 0 7px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.edit-btn {
+  background: #1f87ff;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #1969c5;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background: var(--danger-color);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+  transform: scale(1.05);
+}
+
+.save-btn {
+  background: #28a745; /* Green color for save button */
+  color: white;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.save-btn:hover {
+  background: #218838; /* Darker green on hover */
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background: #6c757d; /* Gray color for cancel button */
+  color: white;
+  padding: 10px 14px;
+  margin: 0 7px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cancel-btn:hover {
+  background: #5a6268; /* Darker gray on hover */
+  transform: scale(1.05);
+}
+
+.editable-input {
+  width: calc(100% - 25px);
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #161b22;
+  background: #21262d;
+  color: white;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.editable-input:focus {
+  border: 1px solid #1f87ff; /* تغيير لون الحواف عند التركيز */
+  outline: none;
+}
