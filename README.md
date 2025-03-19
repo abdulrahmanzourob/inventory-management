@@ -4,6 +4,10 @@
 This project is an **Inventory Management System** that allows users **(Admin, User)** to efficiently manage product stock. It includes a **role-based authentication system** to control access and functionalities.
 
 ---
+### ** Project Screenshot **
+![Screenshot 2025-03-13 013314](https://github.com/user-attachments/assets/e8eecb34-57b3-4d32-a0f8-f0bf121b454b)
+
+---
 
 ## **💡 Key Features**
 
@@ -21,7 +25,6 @@ This project is an **Inventory Management System** that allows users **(Admin, U
 ✅ **Update product details** such as quantity or price.  
 ✅ **Delete products** from the inventory (Admin only).  
 
----
 
 ### **3️⃣ Admin Dashboard**
 1️⃣ **Admin Panel (Admin Dashboard)**
@@ -52,7 +55,8 @@ This project is an **Inventory Management System** that allows users **(Admin, U
     ├── register_view.inc.php
 
 📁 store/
-    ├── 📁 api/
+    ├── 📁 api/![Screenshot 2025-03-13 013314](https://github.com/user-attachments/assets/68357922-cd97-4c73-b0c4-58d5d5781557)
+
     │   ├── api.php
     │   ├── db.php
     │   ├── function.php
