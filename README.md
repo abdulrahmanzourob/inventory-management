@@ -4,7 +4,7 @@
 This project is an **Inventory Management System** that allows users **(Admin, User)** to efficiently manage product stock. It includes a **role-based authentication system** to control access and functionalities.
 
 ---
-### ** Project Screenshot **
+### **Project Screenshot**
 ![Screenshot 2025-03-13 013314](https://github.com/user-attachments/assets/e8eecb34-57b3-4d32-a0f8-f0bf121b454b)
 
 ---
